@@ -96,6 +96,14 @@ SESSIONS=1 pgweb
 
 [![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/sosedoff/pgweb)
 
+## Deploy behind an Nginx proxy for SSL / HTTPS
+
+**NOTE:** Tested on Ubuntu 20.04.3 LTS
+
+* Install nginx: `sudo apt update ; sudo apt install nginx`
+* Edit [this example nginx config file](./nginx.conf) to suit your deployment
+* I followed [these docs](https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx) to get a Let's Encrypt SSL cert.
+
 ## Testing
 
 Before running tests, make sure you have PostgreSQL server running on `localhost:5432`
