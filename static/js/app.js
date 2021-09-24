@@ -1333,6 +1333,11 @@ $(document).ready(function() {
     }
   });
 
+  // Ensure "Scheme" is the default
+  $(".connection-scheme-group").show();
+  $(".connection-standard-group").hide();
+  $(".connection-ssh-group").hide();
+
   $(".connection-group-switch button").on("click", function() {
     $(".connection-group-switch button").removeClass("active");
     $(this).addClass("active");

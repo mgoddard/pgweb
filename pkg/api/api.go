@@ -141,6 +141,9 @@ func Connect(c *gin.Context) {
 
 	var sshInfo *shared.SSHInfo
 	url := c.Request.FormValue("url")
+	// Hack to alter the CC URL, removing the root cert bit
+	reg := regexp.MustCompile("sslmode=verify.+?/root\\.crt")
+	url = reg.ReplaceAllString(url, "sslmode=require")
 
 	if url == "" {
 		badRequest(c, errURLRequired)
