@@ -150,11 +150,7 @@
           <div class="form-group">
             <div class="col-sm-12">
               <label>Enter the <i>connection string</i> for your <a href="https://cockroachlabs.cloud/clusters">CockroachCloud</a> instance</label>
-              <input type="text" class="form-control" id="connection_url" name="url" autocomplete="off">
-              <p class="help-block">
-                URL format: postgres://user:password@host:port/db?sslmode=mode<br/>
-                Read more on PostgreSQL <a href="https://www.postgresql.org/docs/current/static/libpq-connect.html#LIBPQ-CONNSTRING" target="_blank">connection string format</a>.
-              </p>
+              <input type="text" class="form-control" id="connection_url" name="url" autocomplete="off" placeholder="postgresql://user:password@free-tier.gcp-us-central1.cockroachlabs.cloud:26257/dbname..." />
             </div>
           </div>
         </div>
@@ -173,7 +169,7 @@
               <input type="text" id="pg_host" class="form-control" />
             </div>
             <div class="col-sm-2 no-left-padding">
-              <input type="text" id="pg_port" class="form-control" placeholder="5432" />
+              <input type="text" id="pg_port" class="form-control" placeholder="26257" />
             </div>
           </div>
 
@@ -256,7 +252,7 @@
             <button type="button" id="close_connection_window" class="btn btn-block btn-default">Cancel</button>
           </div>
           <p>&nbsp;</p>
-          <p align="center"><i>based on <a href="https://github.com/sosedoff/pgweb">PGWeb</a></i></p>
+          <p align="center"><i>based on <a href="https://github.com/sosedoff/pgweb">pgweb</a></i></p>
         </div>
       </form>
     </div>
