@@ -102,7 +102,7 @@ SESSIONS=1 pgweb
 
 * Install nginx: `sudo apt update ; sudo apt install nginx`
 * Edit [this example nginx config file](./nginx.conf) to suit your deployment
-* I followed [these docs](https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx) to get a Let's Encrypt SSL cert.
+* I followed [these docs](https://certbot.eff.org/lets-encrypt/ubuntufocal-nginx) to get a Let's Encrypt SSL cert
 
 ## Testing
 
